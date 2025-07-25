@@ -1,0 +1,17 @@
+[package]
+name = "tp3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] } # Runtime asynchrone
+chrono = { version = "0.4", features = ["serde"] } # Gestion des dates
+
+# Pour le client de test
+[[bin]]
+name = "serveur"
+path = "src/main.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
